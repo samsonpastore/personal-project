@@ -1,0 +1,203 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Images/counters-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.nav-logo h1{
+  color: #f44336;
+  font-size: 20px;
+  cursor: pointer;
+  
+}
+
+.nav-tab{
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 6%;
+  align-items: center;
+}
+
+.nav-links{
+ flex: 1;
+ text-align: right;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 8px 12px;
+
+}
+
+.nav-links li a{
+  color: white;
+  position: relative;
+  font-size: 13px;
+}
+
+.nav-links li::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background:  #f44336;
+  display: block;
+  transition: 0.7s;
+}
+
+.nav-links li:hover::after{
+  width: 100%;
+}
+
+.text-box{
+  position: absolute;
+  text-align: center;
+  color: white;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.text-box h1{
+  font-size: 62px;
+}
+
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+ 
+}
+
+.text-box-btn{
+  display: inline-block;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  cursor: pointer;
+
+}
+
+.text-box-btn:hover{
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+  
+}
+
+.nav-tab .fa{
+  display: none;
+}
+
+@media(max-width: 700px){
+  .text-box h1{
+    font-size: 20px;
+  }
+  .nav-links li {
+    display: block;
+  }
+ 
+  .nav-links{
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  .nav-tab .fa{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer ;
+  }
+
+  .nav-links ul{
+    padding: 30px;
+  }
+
+  
+
+
+}
+/* ---------section2-------------- */
+
+.course{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+
+}
+
+.courses h1{
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: capitalize;
+
+}
+
+.courses p{
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+
+
+}
+
+.column{
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  transition: 0.5s;
+
+
+
+}
+
+.column h3{
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.column:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px){
+  .row{
+    flex-direction: column; 
+  }
+}

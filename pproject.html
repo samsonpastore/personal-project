@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal project</title>
+  <link rel="stylesheet" href="pproject.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <section class="header">
+    <nav class="nav-tab">
+      <div class="nav-logo">
+        <h1>SAMSONITE</h1>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">COURSE</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>World's biggest University</h1>
+      <p>Making website is now one of the easiest thing in the world. you just need to learn
+        HTML, CSS,<br>Javascript and you are good to go.</p>
+
+      <a href="" class="text-box-btn">Visit us to know more</a>
+    </div>
+
+
+  </section>
+
+  <section class="course">
+    <div class="courses">
+      <h1>courses we offer</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quos.</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h3>Intermidiate</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Placeat, tenetur omnis. Vero minus, soluta voluptatibus 
+          saepe esse sunt accusantium libero tempore vel nobis. Dolorum 
+          aperiam cupiditate at doloremque similique consectetur.</p>
+      </div>
+      <div class="column">
+        <h3>Degree</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Placeat, tenetur omnis. Vero minus, soluta voluptatibus 
+          saepe esse sunt accusantium libero tempore vel nobis. Dolorum 
+          aperiam cupiditate at doloremque similique consectetur.</p>
+      </div>
+      <div class="column">
+        <h3>Post graduation</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Placeat, tenetur omnis. Vero minus, soluta voluptatibus 
+          saepe esse sunt accusantium libero tempore vel nobis. Dolorum 
+          aperiam cupiditate at doloremque similique consectetur.</p>
+      </div>
+
+    </div>
+
+  </section>
+  <section class="campus">
+    <h1>Our Golden Campus</h1>
+
+  </section>
+
+  <!-- ---------------javascript--------------- -->
+  <script>
+    var navlinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navlinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navlinks.style.right = "-200px"
+    }
+
+
+  </script>
+
+
+</body>
+
+
+</html>
